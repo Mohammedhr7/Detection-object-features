@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detection Object</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Detection Object</h1>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <label for="origin_image">Select the origin image:</label>
+        <input type="file" name="origin_image" id="origin_image" required><br><br>
+        <label for="concat_image">Select the concat image of origin:</label>
+        <input type="file" name="concat_image" id="concat_image" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
